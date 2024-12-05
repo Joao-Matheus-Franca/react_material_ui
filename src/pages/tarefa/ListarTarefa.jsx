@@ -90,18 +90,18 @@ const ListarTarefa = () => {
         /> 
         <CardContent>
             <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-                <TableHead>
+            <Table sx={{ minWidth: 650, border: 2 }} size="small" aria-label="a dense table">
+                <TableHead sx={{ backgroundColor: 'black' }}>
                 <TableRow>
-                    <TableCell>#</TableCell>
-                    <TableCell>Título</TableCell>
-                    <TableCell align="right">Descrição</TableCell>
-                    <TableCell align="right">Data de Início</TableCell>
-                    <TableCell align="right">Data de Finalização</TableCell>
-                    <TableCell align="right">Status</TableCell>
-                    <TableCell align="right">Recurso</TableCell>
-                    <TableCell align="left"></TableCell>
-                    <TableCell align="left"></TableCell>
+                    <TableCell sx={{ color: 'white' }}>#</TableCell>
+                    <TableCell sx={{ color: 'white' }}>Título</TableCell>
+                    <TableCell sx={{ color: 'white' }} align="right">Descrição</TableCell>
+                    <TableCell sx={{ color: 'white' }} align="right">Data de Início</TableCell>
+                    <TableCell sx={{ color: 'white' }} align="right">Data de Finalização</TableCell>
+                    <TableCell sx={{ color: 'white' }} align="right">Status</TableCell>
+                    <TableCell sx={{ color: 'white' }} align="right">Recurso</TableCell>
+                    <TableCell sx={{ color: 'white' }} align="left"></TableCell>
+                    <TableCell sx={{ color: 'white' }} align="left"></TableCell>
                 </TableRow>
                 </TableHead>
                 <TableBody>
@@ -134,8 +134,8 @@ const ListarTarefa = () => {
             </TableContainer>
         </CardContent>
         <CardActions>
-            <Button size="small" variant="contained" onClick={handleOpen}>Criar Tarefa</Button>
-            <Button size="small" variant="outlined">Cancelar</Button>
+            <Button size="small" variant="contained" onClick={handleOpen} sx={{ backgroundColor: 'black', '&:hover': {backgroundColor: 'gray'} }}>Criar Tarefa</Button>
+            <Button size="small" variant="outlined" sx={{ borderColor: 'black', color: 'black' }}>Cancelar</Button>
       </CardActions> 
     </Card>
     <div>
